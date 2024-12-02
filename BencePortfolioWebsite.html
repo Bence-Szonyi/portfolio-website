@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-interest">Work Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                  <!-- Contact Button -->
+                  <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <img src="images/profilepic.jpg" alt="Profile Photo" class="rounded-circle" width="150">
+        <h1>Bence Szonyi</h1>
+        <p id="greeting"></p> <!-- Dynamic Greeting -->
+        <p>Final Year Student | BSc (Hons) in Computing in IT Management</p>
+    </header>
+
+    <!-- Summary Section -->
+    <section id="summary" class="container mt-5">
+        <h2>Summary</h2>
+        <p>
+             My name is Bence Szonyi. I am a highly motivated and detail-oriented IT professional with a strong foundation in computing and IT management. With a proven track record of academic performance and hands on experience in various projects. I excel at delivering innovative and efficient solutions. My expertise spans areas such as data analysis, and IT infrastructure, complemented by my passion for cybersecurity and network administration and cloud infrastructure.
+        </p>
+        <p>
+            I thrive in dynamic environments and I love to keep in touch with ever changing tech world.
+            My goal is to contribute to innovative projects and make a  meaningful impact while also growing both personally and professionally.
+        </p>
+    </section>
+    
+
+    <!-- Language Section -->
+    <section id="languages" class="container mt-5">
+        <h2>Languages</h2>
+        <p>Below are the languages I speak and my proficiency levels:</p>
+        <div class="mb-3">
+            <label>English</label>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="inline-size: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Fluent - 95%</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Hungarian</label>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="inline-size: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Native - 85%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mt-5">
+        <h2>Education</h2>
+        <ul>
+            <p>Bachelor's Degree (Hons) in Computing with Information Technology Management</p>
+            <h6>3rd Year Modules:</h6>
+               
+                <li>Data Analysis                                       B+</li>
+                <li>Advanced Routing & Switching			            C+</li>
+                <li>Server-Side Web Development			                C</li>
+                <li>Big Data Technologies				                C+</li>
+                <li>Operating Systems				                    C</li>
+                <li>Work Placement 				                        N/A</li>
+                <li>Cloud Services and Distributed Computing            C</li>
+
+                Overall Grade: 2.25
+            </li>
+            
+            <p></p><h6>2nd Year Modules:</h6>			
+                <li>Software Quality Assurance and Testing		        C</li>
+                <li>Advanced Database Technologies 		                C+</li>
+                <li>Client-Side Web Development			                C+</li>
+                <li>Network Fundamentals 				                D</li>
+                <li>Discrete Mathematics 2				                C</li>
+                <li>IT Scripting & Automation				            C</li>
+                <li>Project						                        A</li>
+                <li>Data Administration and Analysis			        B</li>
+                <li>Routing & Switching Essentials			            A</li>
+                <li>Information Security 				                C</li>
+                <li>Management Science				                    C</li>
+
+                Overall Grade: 2.50
+            </li>
+
+            <p></p><h6>1st Year Modules:</h6>
+                <li>Software Development 1				                C</li>
+                <li>Discrete Mathematics 1 				                C</li>
+                <li>Visual Design and User Experience		            C</li>
+                <li>Critical Skills Development 			            B+</li>
+                <li>Computer Architecture 				                B+</li>
+                <li>Business & Information Systems 			            B-</li>
+                <li>Software Development 2 				                D</li>
+                <li>Systems Analysis				                    C+</li>
+                <li>Database Fundamentals 				                C</li>
+                <li>Statistics 					                        C</li>
+                <li>Operating Systems Fundamentals			            B</li>
+                <li>Social Media Communications 			            C+</li>
+                
+                Overall Grade: 2.44
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">In my 4th year in college my project was based on a Health and Fitness app that lets users use certain features like track calories, water intake, steps taken, weight goal to reach etc with a gamification feature.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">In my 3rd year in college my project was based on Data Analysis of covid-19 cases and their correlation to GDPR factors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">In my 2nd year in college my project was based on a MQTT System for a Bike Rental Website. Where customers can rent bikes nearest to them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5">
+        <h2>Skills</h2>
+        <ul>
+            <li>Technical Skills: HTML, CSS, JavaScript, Python, NoSQL, AWS, Networking, Troubleshooting.</li>
+            <li>Soft Skills: Collaboration, Problem-Solving, Communication, Time management, Attention to detail, Documentation.</li>
+        </ul>
+    </section>
+
+
+    <!-- Certs Section -->
+    <section id="certifications" class="container mt-5">
+        <h2>Certifications</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS Academy Graduate - AWS Academy Cloud Foundations</h5>
+                        <p>Issued: April 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Hat System Administration I (RH124) - Linux Red Hat </h5>
+                        <p>Issued: May 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate of Completion: DCV CTS - VMWare</h5>
+                        <p>Issued: May 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Working in a Digital World: Professional Skills - IBM</h5>
+                        <p>Issued: May 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Interest Section -->
+    <section id="work-interest" class="container mt-5">
+        <h2>Work Interest Areas</h2>
+        <p>I am highly interested in pursuing opportunities in the following fields:</p>
+        <ul>
+            <li><strong>Cybersecurity:</strong> Passionate about protecting systems, networks, and data from cyber threats using modern tools and practices.</li>
+            <li><strong>Cloud Computing:</strong> Excited about working with cloud platforms like AWS, Azure, and Google Cloud for scalable and secure solutions.</li>
+            <li><strong>Data Analysis:</strong> Fascinated by transforming raw data into meaningful insights using analytical tools and techniques.</li>
+            <li><strong>Network Administration:</strong> Enthusiastic about designing, managing, and maintaining secure and efficient networks.</li>
+            <li><strong>IT Management:</strong> Keen on roles that involve coordinating IT resources, optimising workflows, and leading technical teams.</li>
+        </ul>
+        <p>These areas align with my educational background and skills and I am eager to contribute to innovative projects in these areas.</p>
+    </section>
+    
+    
+
+     <!-- Work Experience Section -->
+     <section id="work-experience" class="container mt-5">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Sales Assistant</strong> at Smyths Toys Superstores (Jun 2024 - Oct 2024)
+                <p> • Assisting customers with products
+                    • Operating thet tills
+                    • Picking and Packing
+                    • Working on the outdoor section
+                    • Helping customers with bikes
+                    • Replenishing stock level</p>
+            </li>
+            <li><strong>Sales Assistant</strong> at Asia Market Ltd (May 2023 - Sep 2023)
+                <p> • Saless Assistant
+                    • Data Entry/Office Skills
+                    • Helping customers
+                    • Stacking merchandise
+                    • Working with fresh produce
+                    • Warehouse
+                    • Use of databases and Excel to find and retrive products for customers</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container mt-5">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Football</li>
+            <li>Mountain Biking</li>
+            <li>Boxing</li>
+            <li>Keeping up with new technology trends</li>
+            <li>Gaming and modding video games</li>
+        </ul>
+    </section>
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="container mt-5">
+    <h2>Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+                <p class="text-center">"Great team player!"</p>
+                <div class="text-center">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- 5 stars -->
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+                <p class="text-center">"Very professional and skilled."</p>
+                <div class="text-center">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4.5 stars -->
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+                <p class="text-center">"Delivered exceptional results on time."</p>
+                <div class="text-center">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- 5 stars -->
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+
+  
+<!-- Modal Structure -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Email:</strong> <a href="mailto:szonyi.bence2016@gmail.com">szonyi.bence2016@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+353894166402">0894166402</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Bence-Szonyi" target="_blank">https://github.com/Bence-Szonyi</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bence-szonyi/" target="_blank">https://www.linkedin.com/in/bence-szonyi/</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="download-resume" class="container mt-5 text-center">
+    <h2>Download My Resume</h2>
+    <p>Click the button below to download a copy of my resume:</p>
+    <a href="Bence_Szonyi_CV__.pdf" download class="btn btn-primary btn-lg">
+        <i class="fas fa-download"></i> Download Resume
+    </a>
+</section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-light text-center p-4">
+        <p>Contact Me: <a href="mailto:szonyi.bence2016@gmail.com">szonyi.bence2016@gmail.com</a> | <a href="tel:+353894166402">0894166402</a></p>
+        <p>Follow me on: 
+            <a href="https://github.com/Bence-Szonyi" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/bence-szonyi/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="btn btn-secondary">⬆️</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

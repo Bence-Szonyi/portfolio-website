@@ -1,0 +1,135 @@
+/* Hero Section */
+.hero {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+#greeting {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF; 
+    margin-bottom: 10px;
+}
+
+
+/* Scroll-to-Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* Smooth fade-in animations */
+.hero img {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#summary {
+    background-color: #f8f9fa; /* Light background to distinguish the section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#summary h2 {
+    text-transform: uppercase;
+    color: #007BFF; /* Matches your primary color */
+    margin-bottom: 20px;
+}
+
+#summary p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+
+.text-warning {
+    font-size: 20px; /* Adjust star size */
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007BFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: black !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: lightskyblue !important;
+}
+
+/* Section Titles */
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+#download-resume .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+#download-resume i {
+    margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.progress {
+    height: 25px; /* Adjust the height of the bars */
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px; /* Aligns text vertically */
+}
