@@ -1,24 +1,9 @@
 /* Hero Section */
 .hero {
     padding: 50px;
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #169B62, #FFFFFF, #FF883E);  
 }
-
-#greeting {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007BFF; 
-    margin-bottom: 10px;
-}
-
-
-/* Scroll-to-Top Button */
-#scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-}
+/* IRISH INSPIRED */
 
 /* Smooth fade-in animations */
 .hero img {
@@ -34,20 +19,134 @@
     }
 }
 
-#summary {
+
+
+/* Scroll Progress Bar Styles */
+#scrollProgressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px; /* Thin bar */
+    background-color: #007bff; /* Bootstrap primary color */
+    width: 0%;
+    z-index: 9999; /* Ensure it's on top */
+    transition: width 0.1s ease;
+}
+
+
+/* Hover effect for language section */
+.language-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Makes the hover interaction clear */
+}
+
+.language-hover:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Blue shadow for hover effect */
+}
+
+.language-hover .progress-bar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-hover:hover .progress-bar {
+    background-color: #0056b3 !important; /* Change bar color on hover */
+    color: #ffffff; /* Ensure text remains readable */
+}
+
+
+/* Light Mode (default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Modify elements for dark mode */
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #222222;
+}
+
+.dark-mode .btn-outline-dark {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.dark-mode .btn-outline-dark:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* About Me - Dark Mode Support */
+body.dark-mode #aboutme {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* Light text */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+}
+
+body.dark-mode #aboutme h2 {
+    color: #1e90ff; /* Light blue for headings */
+}
+
+body.dark-mode #aboutme p {
+    color: #dcdcdc; /* Soft light gray text for readability */
+}
+
+
+
+
+.splash-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: (183, 183, 183, 0.3); /* overlay for better text visibility */
+}
+
+
+/* Scroll-to-Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+#greeting {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF; 
+    margin-bottom: 10px;
+}
+
+#aboutme {
     background-color: #f8f9fa; /* Light background to distinguish the section */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#summary h2 {
+#aboutme h2 {
     text-transform: uppercase;
-    color: #007BFF; /* Matches your primary color */
+    color: #333; 
     margin-bottom: 20px;
 }
 
-#summary p {
+#aboutme p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333;
@@ -133,3 +232,124 @@ html {
     text-align: center;
     line-height: 25px; /* Aligns text vertically */
 }
+
+.modal-body img {
+    vertical-align: middle;
+    margin-right: 6px; /* Add space between the icon and text */
+}
+.modal-body p {
+    margin-bottom: 8px; /* Add spacing between contact rows */
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 600px;
+    border-left: 3px solid #007bff;
+    margin-left: 0; /* Align timeline to the left */
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+/* Timeline Content */
+.timeline-content {
+    margin-left: 20px; /* Create spacing from the timeline */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.timeline-content h6 {
+    margin: 0 0 10px;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.timeline-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-content ul li {
+    margin-bottom: 5px;
+}
+
+.grade-A {
+    color: #4CAF50; /* Green for excellent grades */
+    font-weight: bold;
+}
+
+.grade-B {
+    color: #2196F3; /* Blue for good grades */
+    font-weight: bold;
+}
+
+.grade-C {
+    color: #FFC107; /* Yellow for average grades */
+    font-weight: bold;
+}
+
+.grade-D {
+    color: #FF5722; /* Orange for below-average grades */
+    font-weight: bold;
+}
+
+
+
+/* About Me Section Text Fix */
+#aboutme {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #212529; /* Dark text color for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+#aboutme h2 {
+    color: #0d6efd; /* Primary blue for heading */
+}
+
+#aboutme p {
+    color: #333333; /* Darker gray for readability */
+    font-size: 1rem;
+}
+
+
+
+/* Blue Hover Effect for Cards */
+.card-hover:hover {
+    border: 2px solid #007bff; /* Blue border */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Light blue shadow */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+    transform: scale(1.03); /* Slight zoom */
+}
+
+
+
+
